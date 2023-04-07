@@ -102,7 +102,8 @@ header {
     left: 180px;
     z-index: 100;
     height: 60px;
-    box-shadow: 0px 5px 5px -5px rgb(0 0 0 /10%);
+    box-shadow:  -5px -5px 5px rgba(255,255,255,0.2),
+    5px 5px 5px rgba(0,0,0,0.1) ;
     background: #fff;
     transition: left 300ms;
 }
@@ -186,69 +187,20 @@ header {
     inset 5px 5px 5px rgba(0,0,0,0.1) ;
 }
 main {
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .page-header {
     padding: 15px 10px;
     color: #1d1d1d;
 }
-
-
-
 .page-content {
-    padding: 1.3rem 1rem;
-    background: #f1f4f9;
+    width: 100%;
+    padding: 0px 10px;
+    background: #ffffff;
 }
-
-.analytics {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2rem;
-    margin-top: .5rem;
-    margin-bottom: 2rem;
-}
-
-.card {
-    box-shadow: 0px 5px 5px -5px rgb(0 0 0 / 10%);
-    background: #fff;
-    padding: 1rem;
-    border-radius: 3px;
-}
-
-.card-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.card-head h2 {
-    color: #333;
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-
-.card-head span {
-    font-size: 3.2rem;
-    color: var(--text-grey);
-}
-
-.card-progress small {
-    color: #777;
-    font-size: .8rem;
-    font-weight: 600;
-}
-
-.card-indicator {
-    margin: .7rem 0rem;
-    height: 10px;
-    border-radius: 4px;
-    background: #e9edf2;
-    overflow: hidden;
-}
-
 .indicator {
-    height: 10px;
+    height: 2px;
     border-radius: 4px;
 }
 
@@ -336,7 +288,7 @@ table {
 }
 
 table thead tr {
-    background: #e9edf2;
+    border-bottom: 1px solid #dee2e8;
 }
 
 table thead th {
