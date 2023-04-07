@@ -107,15 +107,23 @@ header {
     transition: left 300ms;
 }
 
-.header-content, .header-menu {
+.header-contentOne, .header-menu {
     display: flex;
     align-items: center;
+
 }
 
-.header-content {
+.header-contentOne{
     justify-content: space-between;
     padding: 0rem 1rem;
+    display: inline-block;
+
 }
+.header-contentTwo{
+    right: 0;
+    display: inline-block;
+}
+
 
 .search-bar{
     width: 100%;
@@ -165,7 +173,18 @@ header {
     box-shadow: inset -5px -5px 5px rgba(255,255,255,0.2),
     inset 5px 5px 5px rgba(0,0,0,0.1) ;
 }
-
+.page-list{
+    position: relative;
+    padding: 10px 20px;
+    margin-left: auto;
+}
+.page-list #page{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #adadad;
+    box-shadow: inset -5px -5px 5px rgba(255,255,255,0.2),
+    inset 5px 5px 5px rgba(0,0,0,0.1) ;
+}
 main {
     margin-top: 60px;
 }
@@ -402,8 +421,11 @@ table tbody tr {
     }
     
     header {
-        left: 0;
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:30px 10% ;
     }
     
     .main-content {
