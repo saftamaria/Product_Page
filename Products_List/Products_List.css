@@ -117,61 +117,54 @@ header {
     padding: 0rem 1rem;
 }
 
-.header-content label:first-child span {
-    font-size: 1.3rem;
-}
-
-.header-content label {
-    cursor: pointer;
-}
-
-.header-menu {
-    justify-content: flex-end;
-    padding-top: .5rem;
-}
-
-.header-menu label,
-.header-menu .notify-icon {
-    margin-right: 2rem;
-    position: relative;
-}
-
-.header-menu label span,
-.notify-icon span:first-child {
-    font-size: 1.3rem;
-}
-
-
-.user {
+.search-bar{
+    width: 100%;
+    max-width: 700px;
     display: flex;
     align-items: center;
+    border-radius: 10px;
+    padding: 2px 5px;
+    border: 1px solid #adadad;
+    box-shadow: inset -5px -5px 5px rgba(255,255,255,0.2),
+               inset 5px 5px 5px rgba(0,0,0,0.1) ;
+
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border:#4c4c4c;
+    padding: 10px 10px;
+    font-size: 12px;
+    color: #000;
+}
+::placeholder{
+    color: #000;
 }
 
-.user div, .client-img {
-    height: 40px;
-    width: 40px;
-    margin-right: 1rem;
+.search-bar button i {
+    width: 25px;
 }
 
-.user span:last-child {
-    display: inline-block;
-    margin-left: .3rem;
-    font-size: .8rem;
+.search-bar button  {
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    background: transparent;
 }
+
 
 main {
     margin-top: 60px;
 }
 
 .page-header {
-    padding: 1.3rem 1rem;
-    background: #E9edf2;
-    border-bottom: 1px solid #dee2e8;
+    padding: 15px 10px;
+    color: #1d1d1d;
 }
 
-.page-header h1, .page-header small {
-    color: #74767d;
-}
+
 
 .page-content {
     padding: 1.3rem 1rem;
