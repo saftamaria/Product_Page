@@ -153,7 +153,18 @@ header {
     cursor: pointer;
     background: transparent;
 }
-
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.dropdown #filters{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #adadad;
+    box-shadow: inset -5px -5px 5px rgba(255,255,255,0.2),
+    inset 5px 5px 5px rgba(0,0,0,0.1) ;
+}
 
 main {
     margin-top: 60px;
