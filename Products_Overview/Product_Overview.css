@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+    --main-color: #22BAA0;
+    --color-dark: #34425A;
+    --text-grey: #B0B0B0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Merriweather', sans-serif;
+}
+
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 180px;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 100;
+    background: #e1e1e1;
+    transition: left 300ms;
+}
+/*
+.side-content {
+    height: 100vh;
+    overflow: auto;
+}
+.profile {
+    text-align: center;
+    padding: 2rem 0rem;
+}
+.profile h4 {
+    color: #1d1d1d;
+    font-weight: 500;
+}
+.profile p {
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+}
+.side-menu ul {
+    text-align: left;
+    margin-left: 10px;
+    display: block;
+}
+.side-menu .list-products{
+    display: table;
+}
+.side-menu .list-products .sublist-products{
+    display: table-cell;
+}
+.side-menu li {
+    padding: 1.2rem 0rem;
+    display: flex;
+}
+
+.side-menu li a {
+    color: #000;
+}
+
+
+.side-menu li i{
+    font-size: 20px;
+    text-align: center;
+    padding: 0.5rem 0rem;
+   margin-right: 15px;
+}*/
+
+.title{
+    padding: 0.5rem 1rem;
+    margin: 15px 5px 20px 5px;
+}
+.sidebar ul{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+.sidebar ul li{
+    line-height: 35px;
+    border-bottom: 1px solid #bebebe;
+    font-weight: 600;
+}
+.sidebar ul li a {
+    position: relative;
+    color: #323232;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 40px;
+    display: block;
+    width: 100%;
+    border-left: 5px solid transparent;
+}
+.sidebar ul li a:hover {
+    color: #0900cb;
+    background: #f2f2f2;
+    border-left-color: blue;
+}
+.sidebar ul ul {
+    position: static;
+    display: none;
+}
+.sidebar ul ul li {
+    line-height: 40px;
+    border-bottom: none;
+}
+.sidebar ul ul li a{
+    font-size: 15px;
+    color: #4d4d4d;
+    font-weight: 300;
+    padding-left: 30px;
+}
+
+.sidebar ul ul li a span {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+.sidebar ul ul li a span.rotate {
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+.sidebar ul li  .prod-show.show{
+    display:block;
+}
+
+
+
+
+
+
+
+
+.main-content {
+    margin-left: 165px;
+    width: calc(100% - 165px);
+    transition: margin-left 300ms;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 180px;
+    z-index: 100;
+    height: 70px;
+    box-shadow:  -5px -5px 5px rgba(255,255,255,0.2),
+    5px 5px 5px rgba(0,0,0,0.1) ;
+    background: #fff;
+    transition: left 300ms;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    padding: 7px 15px;
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 2px 5px;
+    border: 1px solid #adadad;
+    box-shadow: inset -5px -5px 5px rgba(255,255,255,0.2),
+    inset 5px 5px 5px rgba(0,0,0,0.1) ;
+
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border:#4c4c4c;
+    padding: 10px 10px;
+    font-size: 12px;
+    color: #000;
+}
+::placeholder{
+    color: #000;
+}
+
+.search-bar button i {
+    width: 25px;
+}
+
+.search-bar button  {
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    background: transparent;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.dropdown #filters{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #adadad;
+    box-shadow: inset -5px -5px 5px rgba(255,255,255,0.2),
+    inset 5px 5px 5px rgba(0,0,0,0.1) ;
+}
+.page-list{
+    position: relative;
+    padding: 10px 20px;
+    margin-left: auto;
+}
+.page-list #page{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #adadad;
+    box-shadow: inset -5px -5px 5px rgba(255,255,255,0.2),
+    inset 5px 5px 5px rgba(0,0,0,0.1) ;
+}
+main {
+    margin-top: 60px;
+}
+
+.page-header {
+    padding: 15px 10px;
+    color: #1d1d1d;
+}
+.page-content {
+    width: 100%;
+    padding: 1px 20px;
+    background: #ffffff;
+}
+table-responsive {
+    width: 100%;
+    overflow: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table thead tr {
+    border-bottom: 1px solid #dee2e8;
+}
+
+table thead th {
+    padding: 1rem 4rem;
+    text-align: left;
+    color: #444;
+    font-size: .9rem;
+}
+
+table thead th:first-child {
+    padding-left: 1rem;
+}
+
+table tbody td {
+    padding: 1rem 4rem;
+    color: #444;
+}
+
+table tbody td:first-child {
+    padding-left: 2.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dee2e8;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+}
+
+.client-info p {
+    color: #555;
+    font-size: .95rem;
+    font-weight: 600;
+}
+
+.client-info small {
+    color: #777;
+}
+
+.actions p,i {
+    display: inline-block;
+    font-size: 1rem;
+    margin-right: .5rem;
+}
+.actions i {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.paid {
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    color: var(--main-color);
+    background: #e5f8ed;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    font-size: .8rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .analytics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .analytics {
+        grid-template-columns: 100%;
+    }
+
+    .sidebar {
+        left: -165px;
+        z-index: 90;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:30px 10% ;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    table {
+        width: 900px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

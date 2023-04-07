@@ -27,65 +27,118 @@
     background: #e1e1e1;
     transition: left 300ms;
 }
-
+/*
 .side-content {
     height: 100vh;
     overflow: auto;
 }
-
-/* width */
-.side-content::-webkit-scrollbar {
-  width: 5px;
-}
-
-.side-content::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
-}
- 
-
-.side-content::-webkit-scrollbar-thumb {
-  background: #b0b0b0; 
-  border-radius: 10px;
-}
-
-.side-content::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
-}
-
 .profile {
     text-align: center;
     padding: 2rem 0rem;
 }
-
 .profile h4 {
     color: #1d1d1d;
     font-weight: 500;
 }
-
 .profile p {
     color: #000;
     font-weight: 600;
     font-size: 20px;
 }
-
-
 .side-menu ul {
     text-align: left;
     margin-left: 10px;
     display: block;
 }
-
+.side-menu .list-products{
+    display: table;
+}
+.side-menu .list-products .sublist-products{
+    display: table-cell;
+}
 .side-menu li {
     padding: 1.2rem 0rem;
     display: flex;
 }
+
+.side-menu li a {
+    color: #000;
+}
+
+
 .side-menu li i{
     font-size: 20px;
     text-align: center;
     padding: 0.5rem 0rem;
    margin-right: 15px;
+}*/
+
+.title{
+    padding: 0.5rem 1rem;
+    margin: 15px 5px 20px 5px;
 }
+.sidebar ul{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+.sidebar ul li{
+    line-height: 35px;
+    border-bottom: 1px solid #bebebe;
+    font-weight: 600;
+}
+.sidebar ul li a {
+    position: relative;
+    color: #323232;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 40px;
+    display: block;
+    width: 100%;
+    border-left: 5px solid transparent;
+}
+.sidebar ul li a:hover {
+    color: #0900cb;
+    background: #f2f2f2;
+    border-left-color: blue;
+}
+.sidebar ul ul {
+    position: static;
+    display: none;
+}
+.sidebar ul ul li {
+    line-height: 40px;
+    border-bottom: none;
+}
+.sidebar ul ul li a{
+    font-size: 15px;
+    color: #4d4d4d;
+    font-weight: 300;
+    padding-left: 30px;
+}
+
+.sidebar ul ul li a span {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+.sidebar ul ul li a span.rotate {
+    transform: translateY(-50%) rotate(-180deg);
+}
+
+.sidebar ul li  .prod-show.show{
+    display:block;
+}
+
+
+
+
+
+
+
 
 .main-content {
     margin-left: 165px;
