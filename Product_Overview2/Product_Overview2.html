@@ -1,14 +1,18 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <title>Product Dashboard</title>
-    <link rel="stylesheet" href="Product_Overview.css">
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Admin Dashboard</title>
 
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Product_Overview2.css">
 </head>
 <body>
 <div class="grid-container">
@@ -43,62 +47,53 @@
     </header>
     <!-- End Header -->
 
+
     <!-- Sidebar -->
     <aside id="sidebar">
-
-        <div class="sidebar">
-
-            <!--<div class="side-content">
-                <div class="profile">
-                    <h3>Product Page</h3>
-                </div>
-                <div class="side-menu">
-                    <ul class="list-products">
-                        <li>
-                            <i class="fa-solid fa-bars-progress"></i>
-                            <a href="#">Product<br> Management</a>
-                         <ul class="sublist-products">
-                           <li><a href="#"> Product List</a></li>
-                           <li><a href="#"> Product Templates</a></li>
-                           <li><a href="#"> Product images</a></li>
-                           <li><a href="#"> Product import</a></li>
-                           <li><a href="#"> Product spects</a></li>
-                           <li><a href="#"> Product associations</a></li>
-                           <li><a href="#"> Product custom fields</a></li>
-                         </ul>
-                        </li>
-                        <li class="align-items">
-                            <i class="fa-solid fa-boxes-stacked"></i>
-                                <p>Category<br> Management</p>
-                        </li>
-                        <li class="align-items">
-                            <i class="fa-sharp fa-solid fa-clipboard-list"></i>
-                                <p>Device<br> Management</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>-->
-            <div class="title"><h3>Product Page</h3></div>
-            <ul>
-                <li>
-                    <a href="#" class="prod-btn"> Product Management
-                        <span class="fas fa-caret-down first"></span>
-                    </a>
-                    <ul class="prod-show">
-                        <li><a href="#"> Product List</a></li>
-                        <li><a href="#"> Product Templates</a></li>
-                        <li><a href="#"> Product images</a></li>
-                        <li><a href="#"> Product import</a></li>
-                        <li><a href="#"> Product spects</a></li>
-                        <li><a href="#"> Product associations</a></li>
-                        <li><a href="#"> Product custom fields</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Category Management <span class="fas fa-caret-down"></span></a>
-                <li><a href="#">Device Management</a></li>
-            </ul>
-
+        <div class="sidebar-title">
+            <div class="sidebar-brand">
+                <span class="material-icons-outlined">inventory</span> Bob's Inventory
+            </div>
+            <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
         </div>
+
+        <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                    <span class="material-icons-outlined">dashboard</span> Dashboard
+                </a>
+            </li>
+            <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                    <span class="material-icons-outlined">inventory_2</span> Products
+                </a>
+            </li>
+            <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                    <span class="material-icons-outlined">fact_check</span> Inventory
+                </a>
+            </li>
+            <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                    <span class="material-icons-outlined">add_shopping_cart</span> Purchase Orders
+                </a>
+            </li>
+            <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                    <span class="material-icons-outlined">shopping_cart</span> Sales Orders
+                </a>
+            </li>
+            <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                    <span class="material-icons-outlined">poll</span> Reports
+                </a>
+            </li>
+            <li class="sidebar-list-item">
+                <a href="#" target="_blank">
+                    <span class="material-icons-outlined">settings</span> Settings
+                </a>
+            </li>
+        </ul>
     </aside>
     <!-- End Sidebar -->
 
@@ -161,8 +156,19 @@
     <!-- End Main -->
 
 </div>
+
+<!-- Scripts -->
+<script src="script.js"></script>
 <script src="https://kit.fontawesome.com/c8f50e1771.js" crossorigin="anonymous"></script>
+<script>
+    $('.prod-btn').click(function () {
+        $('sidebar ul .prod-btn').toggleClass("show");
+        $('sidebar ul .first').toggleClass("rotate");
+    });
+    $('.sidebar ul li').click(function () {
+        $(this).addClass("active").siblings().removeClass("activate");
+    });
 
-
+</script>
 </body>
 </html>
