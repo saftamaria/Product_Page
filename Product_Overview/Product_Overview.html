@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Product Overview</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Product_Overview2.css">
+</head>
+<body>
+<div class="grid-container">
+
+    <!-- Header -->
+    <header>
+        <div class="header-menu">
+            <div class="page-header">
+                <h3>Product Page</h3>
+            </div>
+            <div class="search">
+                <form action="" class="search-bar">
+                    <input type="text" placeholder="Search product..." name="txt">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> </button>
+                </form>
+            </div>
+
+            <div class="dropdown">
+                <select name="filters" id="filters">
+                    <option value="volvo">Filters</option>
+                    <option value="saab">page 2</option>
+                </select>
+            </div>
+            <div class="page-list">
+                <select name="page" id="page">
+                    <option value="volvo">100 / page</option>
+                    <option value="saab">list</option>
+                    <option value="saab">list</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+    <!-- Sidebar -->
+    <aside id="sidebar">
+        <div class="sidebar-title">
+            <div class="sidebar-brand">Power Products</div>
+            <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+                <i class="fa-solid fa-tablet-screen-button"></i>
+                <div class="subTitle" style="display: inline-block">
+                    <p>Product</p>
+                    <p>Management</p>
+                </div>
+         <!-- Dropdown Arrow-->
+                <ul class="sublist-products">
+                    <li><a href="#" class="sub-item"> Product List</a></li>
+                    <li> <a href="#" class="sub-item"> Product Templates</a></li>
+                    <li> <a href="#" class="sub-item"> Product images</a></li>
+                    <li> <a href="#" class="sub-item"> Product import</a></li>
+                    <li> <a href="#" class="sub-item"> Product spects</a></li>
+                    <li> <a href="#" class="sub-item"> Product associations</a></li>
+                    <li><a href="#" class="sub-item"> Product custom fields</a></li>
+                </ul>
+            </li>
+            <li class="sidebar-list-item">
+                <i class="fa-sharp fa-solid fa-check-to-slot"></i>
+                <div class="subTitle" style="display: inline-block">
+                    <p>Category</p>
+                    <p>Management</p>
+                </div>
+            </li>
+            <li class="sidebar-list-item">
+                <i class="fa-solid fa-list-check"></i>
+                <div class="subTitle" style="display: inline-block">
+                    <p>Device</p>
+                    <p>Management</p>
+                </div>
+            </li>
+        </ul>
+    </aside>
+    <!-- End Sidebar -->
+
+    <!-- Main -->
+    <main class="main-container">
+        <div class="main-cards">
+            <div class="card">
+                <div class="card-inner">
+                    <p class="text-primary">Basic details</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="charts">
+            <div class="charts-card">
+                <p class="chart-title">Top 5 Products</p>
+                <div id="bar-chart"></div>
+            </div>
+
+            <div class="charts-card">
+                <p class="chart-title">Purchase and Sales Orders</p>
+                <div id="area-chart"></div>
+            </div>
+
+        </div>
+    </main>
+    <!-- End Main -->
+
+</div>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/c8f50e1771.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

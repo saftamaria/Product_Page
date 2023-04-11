@@ -14,6 +14,7 @@ body {
 
 .text-primary {
     color: #666666;
+    font-weight: 600;
 }
 
 .text-blue {
@@ -107,7 +108,9 @@ header {
     padding: 15px 10px;
     color: #1d1d1d;
 }
-
+.page-header h3 {
+    margin: 5px 15px 5px 5px;
+}
 
 .search-bar{
     width: 100%;
@@ -118,7 +121,8 @@ header {
     padding: 2px 5px;
     border: 1px solid #adadad;
     box-shadow: inset -5px -5px 5px rgba(255,255,255,0.2),
-    inset 5px 5px 5px rgba(0,0,0,0.1) ;
+    inset 5px 5px 5px rgba(0,0,0,0.1);
+    margin: 5px 15px 5px 0;
 
 }
 .search-bar input{
@@ -185,8 +189,8 @@ header {
 #sidebar {
     grid-area: sidebar;
     height: 100%;
-    background-color: #21232d;
-    color: #9799ab;
+    background-color: #a6a6a6;
+    color: #0f0f0f;
     overflow-y: auto;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -225,20 +229,32 @@ header {
     cursor: pointer;
 }
 
-.sidebar-list-item > a {
+.sidebar-list-item > i {
+    display: inline;
+    font-size: 30px;
+    text-align: center;
+}
+.sidebar-list-item > .subTitle > p{
+    font-size: 20px;
+    line-height: 0.5px;
+    margin-left: 12px;
+}
+
+.sublist-products > li {
+    list-style-type: none;
+    padding: 10px 5px;
+    color: #000;
+    margin-top: 10px;
+}
+.sublist-products > li > a:link {
     text-decoration: none;
-    color: #9799ab;
+    color: #000;
 }
 
 .sidebar-responsive {
     display: inline !important;
     position: absolute;
-    /*
-      the z-index of the ApexCharts is 11
-      we want the z-index of the sidebar higher so that
-      the charts are not showing over the sidebar
-      on small screens
-    */
+
     z-index: 12 !important;
 }
 
@@ -268,36 +284,15 @@ header {
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+
+    display: table;
+    justify-content: space-between;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
     padding: 25px;
     background-color: #ffffff;
     box-sizing: border-box;
     border: 1px solid #d2d2d3;
-    border-radius: 5px;
-    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
-}
-
-.card:first-child {
-    border-left: 7px solid #246dec;
-}
-
-.card:nth-child(2) {
-    border-left: 7px solid #f5b74f;
-}
-
-.card:nth-child(3) {
-    border-left: 7px solid #367952;
-}
-
-.card:nth-child(4) {
-    border-left: 7px solid #cc3c43;
-}
-
-.card > span {
-    font-size: 20px;
-    font-weight: 600;
+    width: 1800px;
 }
 
 .card-inner {
@@ -308,10 +303,6 @@ header {
 
 .card-inner > p {
     font-size: 18px;
-}
-
-.card-inner > span {
-    font-size: 35px;
 }
 
 .charts {
