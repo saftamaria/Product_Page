@@ -96,15 +96,15 @@
                 <div class="card-inner">
                     <p class="text-primary">Basic details</p>
                     <div class="inline-Col" style="width: 50%;">
-                       <h3>Product Title</h3>
+                       <p class="innerTitle">Product Title</p>
                        <input type="text" id="textProduct" name="product" value="Baterie Lenovo 45N1776">
                     </div>
                     <div class="inline-Col" style="width: 15%;">
-                        <h3>Product Code</h3>
+                        <p class="innerTitle">Product Code</p>
                         <input type="text" id="text" name="product" value="Baterie Lenovo 45N1776">
                     </div>
                     <div class="inline-Col" style="width: 15%;">
-                        <h3>Product Stock</h3>
+                        <p class="innerTitle">Product Stock</p>
                         <input type="text" id="text" name="product" value="Baterie Lenovo 45N1776">
                     </div>
                     <div class="inline-Col" style="width: 5%;">
@@ -121,18 +121,31 @@
             </div>
         </div>
 
-        <div class="charts">
-            <div class="charts-card">
-                <p class="chart-title">Top 5 Products</p>
-                <div id="bar-chart"></div>
+        <div class="charts" >
+            <div class="charts-card" style="width: 20%">
+                <p class="chart-title">PGM</p>
+                <div id="selections-chart">
+                    <p class="innerTitle">Brand</p>
+                    <select name="selector" id="selector">
+                        <option value="volvo">Lenovo</option>
+                        <option value="saab">page 2</option>
+                    </select>
+
+                </div>
             </div>
 
-            <div class="charts-card">
+            <div class="charts-card" style="width: 20%">
                 <p class="chart-title">Purchase and Sales Orders</p>
-                <div id="area-chart"></div>
+
+                </div>
+
+            <div class="charts-card" style="width: 40%">
+                <p class="chart-title">Purchase and Sales Orders</p>
+
             </div>
 
         </div>
+
     </main>
     <!-- End Main -->
 

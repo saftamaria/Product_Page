@@ -284,14 +284,16 @@ header {
 }
 
 .card {
-    display: table;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: space-between;
     box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
     padding: 25px;
     background-color: #ffffff;
     box-sizing: border-box;
     border: 1px solid #d2d2d3;
-    width: 1800px;
+    width: 1831px;
+    border-radius: 5px;
 }
 
 .card-inner {
@@ -301,13 +303,14 @@ header {
 }
 
 .card-inner > p {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
 }
 
-.card-inner > h3 {
+.inline-Col > .innerTitle {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
+    color: #000;
 }
 .card-inner #text {
     border-radius: 6px;
@@ -342,10 +345,14 @@ header {
     display: inline-block;
 }
 
-.charts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+.charts{
+    display: table;
+    margin: 15px 0;
+}
+.charts .charts-card {
+    display: table-cell;
+    margin: 0 5px 10px 5px;
+
 }
 
 .charts-card {
@@ -360,15 +367,31 @@ header {
 }
 
 .chart-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
+    display: table-cell;
+    left: 0;
+    font-size: 25px;
     font-weight: 600;
+    color: #000;
+}
+#selections-chart > .innerTitle, #selector {
+    display: table-cell;
+}
+#selections-chart >  #selector {
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #adadad;
+    box-shadow: inset -5px -5px 5px rgba(255,255,255,0.2),
+    inset 5px 5px 5px rgba(0,0,0,0.1) ;
+    width: 70%;
 }
 
 
-/* ---------- SCROLLBARS ---------- */
+
+
+
+
+
+    /* ---------- SCROLLBARS ---------- */
 
 ::-webkit-scrollbar {
     width: 5px;
