@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e19b6e2f-ce9f-4407-a2c6-dc9a81faed80" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Product_Overview/Product_Overview.css" beforeDir="false" afterPath="$PROJECT_DIR$/Product_Overview/Product_Overview.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Product_Overview/Product_Overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/Product_Overview/Product_Overview.html" afterDir="false" />
     </list>
@@ -40,16 +41,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="4845" />
-          <entry key="html" value="2284" />
+          <entry key="css" value="5267" />
+          <entry key="html" value="2603" />
           <entry key="js" value="71" />
           <entry key="txt" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="4845" />
-          <entry key="HTML" value="2284" />
+          <entry key="CSS" value="5267" />
+          <entry key="HTML" value="2603" />
           <entry key="JavaScript" value="71" />
           <entry key="PLAIN_TEXT" value="19" />
         </counts>
@@ -57,14 +58,14 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.58456373">
+    <splitter split-orientation="horizontal" split-proportion="0.5818792">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Product_Overview/Product_Overview.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="394">
-                  <caret line="139" column="22" selection-start-line="139" selection-start-column="22" selection-end-line="139" selection-end-column="22" />
+                <state relative-caret-position="302">
+                  <caret line="157" column="51" selection-start-line="157" selection-start-column="38" selection-end-line="157" selection-end-column="51" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -89,8 +90,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Product_Overview/Product_Overview.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="351">
-                  <caret line="354" column="12" selection-start-line="354" selection-start-column="12" selection-end-line="354" selection-end-column="12" />
+                <state relative-caret-position="486">
+                  <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -101,7 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>align</find>
       <find>header-content</find>
       <find>header-menu</find>
       <find>span</find>
@@ -109,7 +109,6 @@
       <find>side-menu</find>
       <find>page-con</find>
       <find>hea</find>
-      <find>search</find>
       <find>filter</find>
       <find>page-</find>
       <find>grid-c</find>
@@ -131,6 +130,8 @@
       <find>card</find>
       <find>h3</find>
       <find>area</find>
+      <find>search</find>
+      <find>seaRCH</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -165,7 +166,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="567" />
     <option name="y" value="28" />
     <option name="width" value="979" />
@@ -242,15 +243,15 @@
       <updated>1680858057616</updated>
       <workItem from="1680858058949" duration="19739000" />
       <workItem from="1681114353915" duration="8444000" />
-      <workItem from="1681207441469" duration="14580000" />
+      <workItem from="1681207441469" duration="20521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42763000" />
+    <option name="totallyTimeSpent" value="48704000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="830" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="830" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.1704698" />
@@ -393,8 +394,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Product_Overview/Product_Overview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="139" column="22" selection-start-line="139" selection-start-column="22" selection-end-line="139" selection-end-column="22" />
+        <state relative-caret-position="302">
+          <caret line="157" column="51" selection-start-line="157" selection-start-column="38" selection-end-line="157" selection-end-column="51" />
           <folding>
             <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -413,8 +414,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Product_Overview/Product_Overview.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="354" column="12" selection-start-line="354" selection-start-column="12" selection-end-line="354" selection-end-column="12" />
+        <state relative-caret-position="486">
+          <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
         </state>
       </provider>
     </entry>

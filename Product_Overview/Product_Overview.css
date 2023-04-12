@@ -103,6 +103,34 @@ header {
     cursor: pointer;
     background: transparent;
 }
+.currency{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: left;
+    border-radius: 10px;
+    padding: 2px 5px;
+    border: 1px solid #adadad;
+    box-shadow: inset -5px -5px 5px rgba(255,255,255,0.2),
+    inset 5px 5px 5px rgba(0,0,0,0.1) ;
+}
+.currency input {
+    background: transparent;
+    flex: 1;
+    border:#4c4c4c;
+    padding: 5px 5px;
+    font-size: 12px;
+    color: #000;
+}
+.currency .currencyPrice {
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 10px;
+    cursor: pointer;
+    background: transparent;
+}
+
 
 .page-header {
     padding: 15px 10px;
@@ -373,16 +401,24 @@ header {
     font-weight: 600;
     color: #000;
 }
-#selections-chart > .innerTitle, #selector {
+
+#selections-chart > p {
+    padding: 20px 0 10px 0;
+}
+.charts-card>  #selections-chart > .innerTitle, #selector {
     display: table-cell;
 }
-#selections-chart >  #selector {
+#selections-chart > #selector {
     padding: 5px;
     border-radius: 8px;
     border: 1px solid #adadad;
     box-shadow: inset -5px -5px 5px rgba(255,255,255,0.2),
     inset 5px 5px 5px rgba(0,0,0,0.1) ;
-    width: 70%;
+    width: 85%;
+}
+
+#selections-chart > .rowOne, .rowTwo{
+    display: inline-block;
 }
 
 
