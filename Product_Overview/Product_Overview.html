@@ -10,6 +10,7 @@
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/reset.css">
     <link rel="stylesheet" href="Product_Overview.css">
 </head>
 <body>
@@ -91,91 +92,13 @@
 
     <!-- Main -->
     <main class="main-container">
-        <div class="main-cards">
-            <div class="card">
-                <div class="card-inner">
-                    <p class="text-primary">Basic details</p>
-                    <div class="inline-Col" style="width: 50%;">
-                       <p class="innerTitle">Product Title</p>
-                       <input type="text" id="textProduct" name="product" value="Baterie Lenovo 45N1776">
-                    </div>
-                    <div class="inline-Col" style="width: 15%;">
-                        <p class="innerTitle">Product Code</p>
-                        <input type="text" id="text" name="product" value="Baterie Lenovo 45N1776">
-                    </div>
-                    <div class="inline-Col" style="width: 15%;">
-                        <p class="innerTitle">Product Stock</p>
-                        <input type="text" id="text" name="product" value="Baterie Lenovo 45N1776">
-                    </div>
-                    <div class="inline-Col" style="width: 5%;">
-                        <i class="fa-solid fa-square-check"></i>
-                        <p>Visible</p>
-                    </div>
-                    <div class="inline-Col" style="width: 10%;">
-                        <i class="fa-solid fa-square-check"></i>
-                        <p>Available</p>
-                    </div>
+        <div class="container">
+           <div class="main-title">Basic Details</div>
 
-                </div>
 
-            </div>
-        </div>
-
-        <div class="charts" >
-            <div class="charts-card" style="width: 30%">
-                <p class="chart-title">PGM</p>
-                <div id="selections-chart">
-                    <p class="innerTitle">Brand</p>
-                    <select name="selector" id="selector">
-                        <option value="volvo">Lenovo</option>
-                        <option value="saab">page 2</option>
-                    </select>
-                    <p class="innerTitle">Gama</p>
-                    <select name="selector" id="selector">
-                        <option value="volvo">gama</option>
-                        <option value="saab">page 2</option>
-                    </select>
-                    <p class="innerTitle">Model</p>
-                    <select name="selector" id="selector">
-                        <option value="volvo">model</option>
-                        <option value="saab">page 2</option>
-                    </select>
-                    <p class="innerTitle">Producator Piesa</p>
-                    <select name="selector" id="selector">
-                        <option value="volvo">Lenovo</option>
-                        <option value="saab">page 2</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="charts-card" style="width: 30%">
-                <p class="chart-title">Prices</p>
-                <div id="selections-chart">
-                    <div class="rowOne" >
-                        <p class="innerTitle">Producator Piesa</p>
-                        <form action="" class="currency">
-                            <input type="text" placeholder="199" id="currency" name="txt">
-                            <p class="currencyPrice">RON</p>
-                        </form>
-                    </div>
-
-                    <div class="rowTwo" >
-                        <p class="innerTitle">Producator Piesa</p>
-                        <form action="" class="search-bar">
-                            <input type="text" placeholder="Search product..." name="txt">
-                            <button type="submit">RON</button>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="charts-card" style="width: 60%">
-                <p class="chart-title">Purchase and Sales Orders</p>
-
-            </div>
 
         </div>
+
 
     </main>
     <!-- End Main -->
