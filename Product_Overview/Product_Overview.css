@@ -359,22 +359,23 @@ header {
     vertical-align: top;
 }
 
-.charts-card > #chart1{
-    width: 22%;
+.charts-card > #chart1, #chart2{
+    width: 25%;
 }
-.charts-card > #chart1, #chart2, #chart3{
-    width: 38%;
+.charts-card >  #chart3{
+    width: 60%;
 }
-.charts-card > #chart4{
-    width: 100%;
-}
-
 .chart-title {
     display: table-cell;
     left: 0;
     font-size: 25px;
     font-weight: 600;
     color: #000;
+}
+.charts-card > #secontTitle{
+    margin: 10px -10px;
+    display: block;
+    position: relative;
 }
 
 #selections-chart > p {
@@ -395,7 +396,7 @@ header {
 .inputWrapper {
     display: table;
     width: calc(85% + 100px);
-    margin: 10px -6px;
+    margin: 10px -20px;
     border-collapse: separate;
     border-spacing: 11px 0;
     vertical-align: top;
@@ -413,8 +414,6 @@ header {
     display: inline-flex;
     width: 100%;
 }
-
-
 .inputWithText input {
     display: table-cell;
     width: 100%;
@@ -423,10 +422,7 @@ header {
     padding: 10px 10px 10px 5px;
     border: 1px solid #adadad;
     box-shadow: inset -5px -5px 5px rgba(255,255,255,0.2), inset 5px 5px 5px rgba(0,0,0,0.1);
-
 }
-
-
 .inputWithText .inputText {
     position: absolute;
     display: inline-block;
@@ -438,4 +434,6 @@ header {
     width: 100px;
     text-align: right;
 }
+
+
 
