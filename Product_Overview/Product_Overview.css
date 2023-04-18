@@ -296,8 +296,16 @@ header {
 }
 .card-inner {
     display: flex;
+    width: 100%;
+    /* margin: 0px 24px 0 12px; */
+}
+.card-inner2{
+    display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 0 -33px 0px;
+    right: 0;
+    left: 10px;
 }
 .card-inner > p {
     font-size: 25px;
@@ -313,20 +321,31 @@ header {
     margin: 8px 0px;
 }
 .inline-Col{
-    display: inline-block;
-    margin: 25px 0;
+    display: inline-table;
+    justify-content: center;
+    margin: 0 87px 0px 0px;
+}
+.inline-Col > .checkText {
+
 }
 
 .inline-Col i{
     color: green;
-    font-size: 25px;
-    margin: 0px 2px 2px 0;
+    font-size: 35px;
+    margin: 0px 5px 2px 0;
 }
 .inline-Col i, p {
     display: inline-block;
-    margin: 15px 0;
+    margin: 10px 0;
 }
-.
+
+.inline-Col > #checkDot{
+    margin: 0 12px 5px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .charts{
     display: table;
     margin: 15px 0;
