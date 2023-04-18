@@ -345,6 +345,7 @@ header {
     margin: 15px 0;
     border-collapse: separate;
     border-spacing: 7px 10px;
+    width: 100%;
 }
 
 .charts-card {
@@ -364,6 +365,9 @@ header {
 .charts-card > #chart1, #chart2, #chart3{
     width: 38%;
 }
+.charts-card > #chart4{
+    width: 100%;
+}
 
 .chart-title {
     display: table-cell;
@@ -380,7 +384,7 @@ header {
     display: table-cell;
 }
 #selections-chart > .selector #selector {
-    padding: 5px;
+    padding: 10px;
     border-radius: 8px;
     border: 1px solid #adadad;
     box-shadow: inset -5px -5px 5px rgba(255,255,255,0.2),
@@ -390,10 +394,10 @@ header {
 
 .inputWrapper {
     display: table;
-    width: calc(100% + 20px);
-    margin: 0 -10px;
+    width: calc(85% + 100px);
+    margin: 10px -6px;
     border-collapse: separate;
-    border-spacing: 10px 0;
+    border-spacing: 11px 0;
     vertical-align: top;
 }
 .inputContainer {
@@ -407,17 +411,22 @@ header {
 .inputWithText {
     position: relative;
     display: inline-flex;
+    width: 100%;
 }
 
+
 .inputWithText input {
-    display: inline-block;
+    display: table-cell;
     width: 100%;
     padding-right: 120px;
     border-radius: 10px;
-    padding: 5px 10px 5px 5px;
+    padding: 10px 10px 10px 5px;
     border: 1px solid #adadad;
     box-shadow: inset -5px -5px 5px rgba(255,255,255,0.2), inset 5px 5px 5px rgba(0,0,0,0.1);
+
 }
+
+
 .inputWithText .inputText {
     position: absolute;
     display: inline-block;
