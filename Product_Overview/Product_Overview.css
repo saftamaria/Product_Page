@@ -413,7 +413,7 @@ header {
 
 .label {
     display: block;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .inputWithText {
     position: relative;
@@ -441,12 +441,19 @@ header {
     text-align: right;
 }
 
-.spacerLine{
-    border-style: solid;
-    border: 10px #000;
-    width: 100%;
-
+ .inputWrapper > .spacerLine{
+     background: #bebebe;
+     padding: 1px;
+     width: 100%;
 }
+ .inputWrapper > .underText{
+     color: #3593ff;
+     font-size: 25px;
+     float: right;
+     font-weight: 600;
+     margin: 15px 0;
+ }
+
 
 
 
