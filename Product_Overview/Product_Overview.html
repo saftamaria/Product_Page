@@ -92,13 +92,101 @@
 
     <!-- Main -->
     <main class="main-container">
-        <div class="container">
-           <div class="main-title">Basic Details</div>
-
-
-
+        <div class="main-cards">
+            <div class="card">
+                <div class="card-inner">
+                    <p class="text-primary">Basic details</p>
+                    <div class="inline-Col" >
+                        <p class="innerTitle">Product Title</p>
+                        <input type="text" id="textProduct" name="product" value="Baterie Lenovo 45N1776">
+                    </div>
+                    <div class="inline-Col" >
+                        <p class="innerTitle">Product Code</p>
+                        <input type="text" id="text" name="product" value="Baterie Lenovo 45N1776">
+                    </div>
+                    <div class="inline-Col" >
+                        <p class="innerTitle">Product Stock</p>
+                        <input type="text" id="text" name="product" value="Baterie Lenovo 45N1776">
+                    </div>
+                    <div class="inline-Col" >
+                        <i class="fa-solid fa-square-check"></i>
+                        <p>Visible</p>
+                    </div>
+                    <div class="inline-Col" >
+                        <i class="fa-solid fa-square-check"></i>
+                        <p>Available</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
+        <div class="charts" >
+            <div class="charts-card" id="chart1">
+                  <p class="chart-title">PGM</p>
+                  <div id="selections-chart">
+                        <p class="innerTitle">Brand</p>
+                    <div class="selector">
+                        <select name="selector" id="selector">
+                          <option value="volvo">Lenovo</option>
+                          <option value="saab">page 2</option>
+                         </select>
+                    </div>
+
+                    <p class="innerTitle">Gama</p>
+                    <div class="selector">
+                      <select name="selector" id="selector">
+                        <option value="volvo">gama</option>
+                        <option value="saab">page 2</option>
+                       </select>
+                    </div>
+
+                    <p class="innerTitle">Model</p>
+                    <div class="selector">
+                      <select name="selector" id="selector">
+                        <option value="volvo">model</option>
+                        <option value="saab">page 2</option>
+                      </select>
+                    </div>
+
+                    <p class="innerTitle">Producator Piesa</p>
+                    <div class="selector">
+                      <select name="selector" id="selector">
+                        <option value="volvo">Lenovo</option>
+                        <option value="saab">page 2</option>
+                      </select>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="charts-card" id="chart2">
+                 <p class="chart-title">Prices</p>
+
+                  <div class="inputWrapper">
+                    <div class="inputContainer" >
+                        <span class="label">Selling Price</span>
+                        <div class="inputWithText">
+                            <input type="text" placeholder="Standard Price" value="199" />
+                            <span class="inputText">RON</span>
+                        </div>
+                    </div>
+
+                    <div class="inputContainer" >
+                        <span class="label">Selling Price</span>
+                        <div class="inputWithText">
+                            <input type="text" placeholder="Standard Price" value="234" />
+                            <span class="inputText">RON</span>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="charts-card" id="chart3">
+                <p class="chart-title">Purchase and Sales Orders</p>
+
+            </div>
+
+        </div>
 
     </main>
     <!-- End Main -->
