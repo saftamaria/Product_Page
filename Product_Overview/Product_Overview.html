@@ -391,6 +391,7 @@
         }
         .inline-Col i, p {
             display: inline;
+            margin: 0 0 23px;
         }
 
         .inline-Col > #checkDot{
@@ -405,58 +406,51 @@
             width: 100%;
         }
 
-        .charts-card {
+        .chartsCard {
             background: #fff;
             margin: 20px;
             box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
             border-radius: 5px;
             position: relative;
             display: table-cell;
-            padding: 30px;
+            padding: 28px;
             vertical-align: top;
         }
 
-        .charts-card > #chart1, #chart2{
+        .chartsCard > #chart1, #chart2{
             width: 25%;
         }
-        .charts-card >  #chart3{
+        .chartsCard >  #chart3{
             width: 60%;
         }
-        .chart-title {
+        .chartTitle {
             display: table-cell;
-            left: 0;
             font-size: 25px;
             font-weight: 600;
             color: #000;
-        }
-        .charts-card > #secontTitle{
-            margin: 10px -10px;
-            display: block;
-            position: relative;
         }
 
         #selections-chart > p {
             padding: 20px 0 10px 0;
         }
-        .charts-card>  #selections-chart >  #selector {
+        .inputWrapper > .inputContainer >  #selector {
             display: table-cell;
         }
-        #selections-chart > .selector #selector {
+        .inputWrapper > .inputContainer >.selector #selector {
             padding: 10px;
             border-radius: 8px;
             border: 1px solid #adadad;
             box-shadow: inset -5px -5px 5px rgba(255,255,255,0.2),
-            inset 5px 5px 5px rgba(0,0,0,0.1) ;
+            inset 5px 5px 5px rgba(0,0,0,0.1);
             width: 100%;
         }
-
+        .inputWrapper > .inputContainer> innerTitle{
+            margin:0 0 5px;
+        }
         .inputWrapper {
             display: table;
-            width: calc(85% + 100px);
-            margin: 10px -20px;
+            width: 100%;
             border-collapse: separate;
-            border-spacing: 11px 0;
-            vertical-align: top;
         }
         .inputContainer {
             display: table-cell;
@@ -464,7 +458,7 @@
 
         .label {
             display: block;
-            margin: 20px 0;
+            margin: 10px 0;
         }
         .inputWithText {
             position: relative;
@@ -631,45 +625,60 @@
         </div>
 
         <div class="charts" >
-            <div class="charts-card" id="chart1">
-                  <p class="chart-title">PGM</p>
+            <div class="chartsCard" id="chart1">
+                  <p class="chartTitle">PGM</p class="chartTitle">
                   <div id="selections-chart">
-                        <p class="innerTitle">Brand</p>
-                    <div class="selector">
-                        <select name="selector" id="selector">
-                          <option value="volvo">Lenovo</option>
-                          <option value="saab">page 2</option>
-                         </select>
-                    </div>
 
-                    <p class="innerTitle">Gama</p>
-                    <div class="selector">
-                      <select name="selector" id="selector">
-                        <option value="volvo">gama</option>
-                        <option value="saab">page 2</option>
-                       </select>
-                    </div>
+                      <div class="inputWrapper">
+                          <div class="inputContainer">
+                            <span class="label">Brand</span>
+                            <div class="selector">
+                              <select name="selector" id="selector">
+                                  <option value="volvo">Lenovo</option>
+                                  <option value="saab">page 2</option>
+                              </select>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="inputWrapper">
+                          <div class="inputContainer">
+                             <span class="label">Gama</span>
+                             <div class="selector">
+                              <select name="selector" id="selector">
+                                  <option value="volvo">gama</option>
+                                  <option value="saab">page 2</option>
+                              </select>
+                             </div>
+                          </div>
+                      </div>
+                      <div class="inputWrapper">
+                          <div class="inputContainer">
+                            <span class="label">Model</span>
+                            <div class="selector">
+                              <select name="selector" id="selector">
+                                  <option value="volvo">model</option>
+                                  <option value="saab">page 2</option>
+                              </select>
+                            </div>
+                          </div>
+                      </div>
 
-                    <p class="innerTitle">Model</p>
-                    <div class="selector">
-                      <select name="selector" id="selector">
-                        <option value="volvo">model</option>
-                        <option value="saab">page 2</option>
-                      </select>
-                    </div>
-
-                    <p class="innerTitle">Producator Piesa</p>
-                    <div class="selector">
-                      <select name="selector" id="selector">
-                        <option value="volvo">Lenovo</option>
-                        <option value="saab">page 2</option>
-                      </select>
-                    </div>
+                      <div class="inputWrapper">
+                          <div class="inputContainer">
+                            <span class="label">Producator Piesa</span>
+                            <div class="selector">
+                              <select name="selector" id="selector">
+                                  <option value="volvo">Lenovo</option>
+                                  <option value="saab">page 2</option>
+                              </select>
+                            </div>
+                          </div>
+                      </div>
                   </div>
             </div>
 
-            <div class="charts-card" id="chart2">
-                 <p class="chart-title " id="secontTitle">Prices</p>
+            <div class="chartsCard" id="chart2">
+                 <h3 class="chartTitle">Prices</h3>
 
                   <div class="inputWrapper">
                     <div class="inputContainer" >
@@ -718,8 +727,8 @@
             </div>
 
 
-            <div class="charts-card" id="chart3">
-                <p class="chart-title">Puroduct Specs</p>
+            <div class="chartsCard" id="chart3">
+                <p class="chartTitle">Puroduct Specs</p>
                 <div class="inputWrapper">
                     <div class="inputContainer" >
                         <span class="label">Capacitate</span>
@@ -784,13 +793,13 @@
         </div>
 
         <div class="charts" >
-            <div class="charts-card">
-                <p class="chart-title">Product descrirption</p>
+            <div class="chartsCard">
+                <p class="chartTitle">Product descrirption</p>
                 <div class="innerBox"></div>
 
             </div>
-            <div class="charts-card">
-                <p class="chart-title">Product descrirption</p>
+            <div class="chartsCard">
+                <p class="chartTitle">Product descrirption</p>
                 <div class="search ">
                     <form action="" class="search-bar-custom">
                         <input type="text" placeholder="Search product..." name="txt">
