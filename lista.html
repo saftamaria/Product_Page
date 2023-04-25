@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+        @import url('assets/reset.css');
+        @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+
+        * {
+            font-family: sans-serif !important;
+            color: #000;
+            text-decoration: none !important;
+        }
+        .gridContainer {
+            display: grid;
+            grid-template-columns: 300px 1fr 1fr 1fr;
+            grid-template-rows: 0.2fr 3fr;
+            grid-template-areas:
+                    "sidebar header header header"
+                    "sidebar main main main";
+            height: 100vh;
+        }
+        #sidebar {
+            grid-area: sidebar;
+            background-color: #a6a6a6;
+            color: #0f0f0f;
+            overflow-y: auto;
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            height: 100%;
+        }
+
+        .sidebarTitle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px 20px 20px;
+            margin-bottom: 30px;
+        }
+
+        .sidebarListItem {
+            padding: 0;
+            margin-top: 15px;
+            list-style-type: none;
+        }
+        .sidebarListItem {
+            padding: 20px 22px 24px 30px;
+            position: relative;
+        }
+        .listItemToggle > i {
+            display: inline;
+            font-size: 30px;
+            text-align: center;
+            position: absolute;
+            top: -5px;
+            left: -40px;
+        }
+        .listItemToggle {
+            position: relative;
+            display: block;
+        }
+        .subTitle {
+            display: inline-block;
+            position: relative;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            font-weight: bold;
+        }
+        .sidebarListItem > .subTitle > p {
+            font-size: 20px;
+            line-height: 0.5px;
+            padding: 0;
+            margin: 0;
+        }
+        .sublistProducts > li {
+            list-style-type: none;
+            padding: 10px 0;
+            color: #000;
+            margin-top: 10px;
+        }
+        .sublistProducts > li > a {
+            text-decoration: none;
+            color: #000;
+        }
+        header {
+            grid-area: header;
+            height: 70px;
+            background-color: #ffffff;
+            display: table;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px 0 30px;
+            box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+        }
+        .mainContainer {
+            grid-area: main;
+            overflow-y: auto;
+            padding: 20px 20px;
+        }
+        main {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="gridContainer">
+<aside id="sidebar">
+    <div class="sidebarTitle">
+        <div class="sidebarBrand">Power Products</div>
+        <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+    </div>
+
+    <ul class="sidebarList">
+        <li class="sidebarListItem">
+            <a href="javascript:void(0);" class="listItemToggle">
+                <i class="fa-solid fa-tablet-screen-button"></i>
+                <span class="subTitle">
+                    <p>Product</p>
+                    <p>Management</p>
+                </span>
+            </a>
+            <!-- Dropdown Arrow-->
+            <ul class="sublistProducts">
+                <li><a href="#" class="subItem"> Product List</a></li>
+                <li><a href="#" class="subItem"> Product Templates</a></li>
+                <li><a href="#" class="subItem"> Product images</a></li>
+                <li><a href="#" class="subItem"> Product import</a></li>
+                <li><a href="#" class="subItem"> Product spects</a></li>
+                <li><a href="#" class="subItem"> Product associations</a></li>
+                <li><a href="#" class="subItem"> Product custom fields</a></li>
+            </ul>
+        </li>
+        <li class="sidebarListItem">
+            <a href="javascript:void(0);" class="listItemToggle">
+                <i class="fa-sharp fa-solid fa-check-to-slot"></i>
+                <span class="subTitle">
+                    <p>Category</p>
+                    <p>Management</p>
+                </span>
+            </a>
+        </li>
+        <li class="sidebarListItem">
+            <a href="javascript:void(0);" class="listItemToggle">
+                <i class="fa-solid fa-list-check"></i>
+                <span class="subTitle">
+                    <p>Device</p>
+                    <p>Management</p>
+                </span>
+            </a>
+        </li>
+    </ul>
+</aside>
+<header>
+    header
+</header>
+<main>
+    <div class="mainContainer">
+        main
+    </div>
+
+</main>
+</div>
+<script src="https://kit.fontawesome.com/c8f50e1771.js" crossorigin="anonymous"></script>
+</body>
+</html>
