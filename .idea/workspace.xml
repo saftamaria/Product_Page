@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e19b6e2f-ce9f-4407-a2c6-dc9a81faed80" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lista.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product_Overview/Product_Overview.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Product_Overview/Product_Overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/Product_Overview/Product_Overview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Products_List/Product_List.css" beforeDir="false" afterPath="$PROJECT_DIR$/Products_List/Product_List.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Products_List/Product_List.html" beforeDir="false" afterPath="$PROJECT_DIR$/Products_List/Product_List.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +29,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="24" />
-          <entry key="html" value="27" />
-          <entry key="js" value="3" />
+          <entry key="html" value="28" />
+          <entry key="js" value="4" />
           <entry key="png" value="2" />
           <entry key="txt" value="1" />
         </counts>
@@ -39,16 +38,16 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="24" />
-          <entry key="HTML" value="27" />
+          <entry key="HTML" value="28" />
           <entry key="Image" value="2" />
-          <entry key="JavaScript" value="3" />
+          <entry key="JavaScript" value="4" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="6767" />
-          <entry key="html" value="3699" />
+          <entry key="html" value="3758" />
           <entry key="js" value="71" />
           <entry key="txt" value="19" />
         </counts>
@@ -56,7 +55,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="6767" />
-          <entry key="HTML" value="3699" />
+          <entry key="HTML" value="3758" />
           <entry key="JavaScript" value="71" />
           <entry key="PLAIN_TEXT" value="19" />
         </counts>
@@ -64,17 +63,15 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.58456373">
+    <splitter split-orientation="horizontal" split-proportion="0.5416107">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Product_Overview/Product_Overview.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+                <state relative-caret-position="555">
+                  <caret line="518" column="9" selection-start-line="518" selection-start-column="9" selection-end-line="518" selection-end-column="9" />
                   <folding>
-                    <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -88,29 +85,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lista.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="184">
-                  <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="12" selection-end-column="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Products_List/Product_List.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Products_List/Product_List.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="230">
-                  <caret line="231" column="22" lean-forward="true" selection-end-line="353" />
+                <state relative-caret-position="338">
+                  <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="41" />
                 </state>
               </provider>
             </entry>
@@ -121,8 +100,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sidebar-list-item</find>
-      <find>subtitle</find>
       <find>sublist-products</find>
       <find>header</find>
       <find>rid-container</find>
@@ -143,14 +120,16 @@
       <find>inline-c</find>
       <find>box-sh</find>
       <find>search</find>
-      <find>listItemToggle</find>
       <find>sidebar-list</find>
-      <find>subTitle</find>
       <find>sublist</find>
       <find>sidebar</find>
-      <find>sublistProducts</find>
       <find>sidebarList</find>
       <find>sidebarListItem</find>
+      <find>subTitle</find>
+      <find>listItemToggle</find>
+      <find>sublistProducts</find>
+      <find>sidebar-responsive</find>
+      <find>sideBarList</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -273,12 +252,12 @@
       <workItem from="1681845809803" duration="121000" />
       <workItem from="1681845962678" duration="50000" />
       <workItem from="1681846256350" duration="3526000" />
-      <workItem from="1682341913760" duration="2058000" />
+      <workItem from="1682341913760" duration="3207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67261000" />
+    <option name="totallyTimeSpent" value="68410000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="830" extended-state="6" />
@@ -316,13 +295,6 @@
     <entry file="file://$PROJECT_DIR$/Admin-Dashboard-Modern/index.html" />
     <entry file="file://$PROJECT_DIR$/Products_List/text.txt" />
     <entry file="file://$PROJECT_DIR$/Products_List/Products_List.js" />
-    <entry file="file://$PROJECT_DIR$/Product_Overview/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Products_Overview/Product_Overview.html" />
     <entry file="file://$PROJECT_DIR$/Products_Overview/Product_Overview.css" />
     <entry file="file://$PROJECT_DIR$/Products_List/Products_List.html" />
@@ -342,13 +314,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lista.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Products_List/Product_List.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -356,20 +321,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Product_Overview/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Products_List/Product_List.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="253">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lista.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="46" column="10" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Product_Overview/Product_Overview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state relative-caret-position="555">
+          <caret line="518" column="9" selection-start-line="518" selection-start-column="9" selection-end-line="518" selection-end-column="9" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#aside#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />

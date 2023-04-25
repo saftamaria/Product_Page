@@ -4,16 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Product Overview</title>
+
     <style>
 
         @import url('../assets/reset.css');
         @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-        * {
-            font-family: sans-serif !important;
-            color: #000;
-            text-decoration: none !important;
-        }
         body {
             margin: 0;
             padding: 0;
@@ -64,6 +61,7 @@
                     "sidebar main main main";
             height: 100vh;
         }
+
 
         /* ---------- HEADER ---------- */
 
@@ -279,26 +277,49 @@
             list-style-type: none;
         }
         .sidebarListItem {
-            padding: 20px 20px 20px 26px;
+            padding: 10px 26px 30px 60px;
             position: relative;
         }
 
-        .sublist-products > li {
+        .listItemToggle > i {
+            display: inline;
+            font-size: 25px;
+            text-align: center;
+            position: absolute;
+            top: 15px;
+            left: -45px;
+            color: #000;
+        }
+        .listItemToggle {
+            position: relative;
+            display: block;
+            color: #000;
+        }
+
+        .subTitle {
+            display: inline-block;
+            position: relative;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .sidebarListItem > .subTitle > p {
+            font-size: 20px;
+            line-height: 0.5px;
+            padding: 0;
+            margin: 0;
+        }
+        .sublistProducts > li {
             list-style-type: none;
             padding: 10px 5px;
             color: #000;
             margin-top: 10px;
         }
-        .sublist-products > li > a:link {
+        .sublistProducts > li > a:link {
             text-decoration: none;
             color: #000;
-        }
-
-        .sidebar-responsive {
-            display: inline !important;
-            position: absolute;
-
-            z-index: 12 !important;
         }
 
 
@@ -498,7 +519,6 @@
             height: 500px;
             margin: 10px 0;
         }
-
     </style>
 </head>
 <body>
@@ -546,13 +566,13 @@
             <li class="sidebarListItem">
                 <a href="javascript:void(0);" class="listItemToggle">
                 <i class="fa-solid fa-tablet-screen-button"></i>
-                <span class="subTitle">
+                  <span class="subTitle">
                     <p>Product</p>
                     <p>Management</p>
-                </span>
+                  </span>
                 </a>
          <!-- Dropdown Arrow-->
-                <ul class="sublist-products">
+                <ul class="sublistProducts">
                     <li><a href="#" class="sub-item"> Product List</a></li>
                     <li> <a href="#" class="sub-item"> Product Templates</a></li>
                     <li> <a href="#" class="sub-item"> Product images</a></li>
@@ -563,18 +583,22 @@
                 </ul>
             </li>
             <li class="sidebarListItem">
-                <i class="fa-sharp fa-solid fa-check-to-slot"></i>
-                <div class="subTitle" style="display: inline-block">
+                <a href="javascript:void(0);" class="listItemToggle">
+                    <i class="fa-sharp fa-solid fa-check-to-slot"></i>
+                    <span class="subTitle">
                     <p>Category</p>
                     <p>Management</p>
-                </div>
+                </span>
+                </a>
             </li>
             <li class="sidebarListItem">
-                <i class="fa-solid fa-list-check"></i>
-                <div class="subTitle" style="display: inline-block">
+                <a href="javascript:void(0);" class="listItemToggle">
+                    <i class="fa-solid fa-list-check"></i>
+                    <span class="subTitle">
                     <p>Device</p>
                     <p>Management</p>
-                </div>
+                </span>
+                </a>
             </li>
         </ul>
     </aside>
